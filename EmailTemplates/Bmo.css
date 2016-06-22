@@ -1,0 +1,22 @@
+﻿body {
+    font-family: Arial;
+}
+
+.style1 {
+    font-size: 1px; 
+    line-height: 1px;
+    background-color: #005da0;
+}
+
+.style2 {
+    font-size: 2em;
+    background-color: #454445;
+}
+
+table {
+    -premailer-cellspacing: 0;
+    -premailer-cellpadding: 0;
+    -premailer-align: center;
+    -premailer-width: 500;
+    -premailer-border: 0;
+}

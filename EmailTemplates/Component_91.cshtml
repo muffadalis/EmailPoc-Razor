@@ -1,0 +1,60 @@
+﻿<table>
+    <tr>
+        <td height="10" />
+    </tr>
+    <tr>
+        <td height="16" colspan="2" class="style1">
+            <b>
+                @Model.ProductUrl
+            </b>
+        </td>
+    </tr>
+    <tr>
+        <td height="1" class="style1" colspan="2">&#160;</td>
+    </tr>
+    <tr>
+        <td height="10" />
+    </tr>
+    <tr>
+        <td colspan="2" class="style2">@Model.ProductDescription.</td>
+    </tr>
+    <tr>
+        <td height="10" />
+    </tr>
+    <tr>
+        <td width="100" class="style2">
+            @Model.Translations["225"]
+        </td>
+        <td width="450" align="left">
+            @*<font face="Arial" size="2" color="#454445">
+                    <xsl:value-of select="EMAIL_COMPONENT[@component_id = 91]/COMPONENT_DETAILS/INVITATION/@userid_key_1" />
+                </font>*@
+        </td>
+    </tr>
+    <tr>
+        <td height="10" />
+    </tr>
+    <tr>
+        <td valign="top" class="style2">
+            @Model.Translations["386"]
+        </td>
+        <td align="left" class="style2">
+            @Model.Translations["387"]
+        </td>
+    </tr>
+    <tr>
+        <td height="20" />
+    </tr>
+    <tr>
+        <td colspan="2" class="style2">
+            @Model.Translations["192"]
+            <a href="@Model.ProductUrl" target="_blank">
+                @Model.Translations["193"]
+            </a>
+            @Model.Translations["194"] @Model.ProductDescription.
+        </td>
+    </tr>
+    <tr>
+        <td height="20" />
+    </tr>
+</table>

@@ -20,7 +20,6 @@ namespace ConsoleApplication
             var templateServiceConfiguration = new TemplateServiceConfiguration
             {
                 TemplateManager = new MyResolvePathTemplateManager(templatePaths),
-                Debug = true,
                 Namespaces = new HashSet<string> { "ConsoleApplication.Models", "System" }
             };
             
@@ -34,7 +33,7 @@ namespace ConsoleApplication
             var result = pm.MoveCssInline(removeStyleElements: true, stripIdAndClassAttributes: true);
 
             Console.WriteLine(result.Html);
-
+            Console.ReadLine();
         }
     }
 }

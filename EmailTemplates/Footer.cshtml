@@ -1,1 +1,3 @@
-﻿<p> @Model.Footer </p>
+﻿@if (string.IsNullOrEmpty(Model.Footer) == false) {
+    <p> @Model.Footer </p>
+}
